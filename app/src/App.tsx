@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import EventList from './events/EventList';
+import { MOCK_EVENTS } from './events/MockEvents';
 
 function App() {
   return (
@@ -13,16 +15,7 @@ function App() {
       </h1>
       {/* <div className="grid grid-cols-1 gap-4"> */}
       <div>
-        <div className="box">
-          <div>
-            <h1>Name</h1>
-            <h1>Location</h1>
-          </div>
-          <p>Attendees</p>
-        </div>
-        <div className="box">02</div>
-        <div className="box">03</div>
-        <div className="box">04</div>
+        <EventList events={MOCK_EVENTS}/>
       </div>
     </div>
   );
